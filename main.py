@@ -3,23 +3,44 @@ from streamlit_option_menu import option_menu
 
 with st.sidebar:
     select = option_menu(
-        menu_title="internship",
-        options=["internship","about","contact"],
-        icons=["book","file-person","telephone"]
+        menu_title="RESUME",
+        options=["Biodata","Summary","education","skills","project","languages known","certification"],
+        icons=["file-earmark-person","balloon","file-person","eye-fill","cast","check-square","award"]
      )
-if select=="internship":
-    st.title("internship")
-    st.write("hii....how are you .....what about your tdy plan")
+if select=="Biodata":
+    st.title("ARUNACHALAM N")
+    st.write("Python programmer")
+    st.write("madurai(Dt),Tamil nadu,India")
+    st.write("email:arunachalam192004@gmail.com")
+    st.write("mobile:6381823682")
 
-elif select=="about":
-    st.title("about")
-    st.balloons()
-    st.header("arun")
+elif select=="Summary":
+    st.header("Highly motivated recent graduate with a strong foundation in python programming.")
+             
 
-elif select=="contact":
-    st.title("contact")
-    st.button("submit")
-    st.button("click")
+elif select=="education":
+    st.title("Bachelor of engineering(Electronics and communication engineering)")
+    st.write("Sethu institute of Technology")
+    st.write("CGPA:8.144")
+    st.write("HSC:percentage:68.5% Srividyalayam Matric Hr.Sec.School")
+    st.write("SSLC:percentage:61.6% Srividyalayam Matric Hr.Sec.School")
+    
+elif select=="skills":
+    st.header("python programming")
+    st.header("streamlit")
+
+elif select=="project":
+    st.header("**IOT BASED SMART MINING HELMET USING LORAWAN TECHNOLOGY**")
+
+elif select=="languages known":
+    st.header("_ENGLISH_")
+    st.header("_TAMIL_")
+
+elif select=="certification":
+    st.header("1)NPTEL-INTERNET OF THINGS")
+    st.header("2)NPTEL-INTRODUCTION TO INDUSTRY 4.0 AND INDUSTRIAL INTERNET OF THINGS")
+    st.header("3)INFOSYS SPRING BOARD-BASICS OF PYTHON")
+
 
 # st.title("ttt")
 # st.title("vinsup infotech")
